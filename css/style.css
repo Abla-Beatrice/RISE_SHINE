@@ -1,0 +1,35 @@
+html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Sen';}
+img {
+  display: left; /* display the image as a block element */
+  margin: 0 auto; /* center the image horizontally */
+  width: 100px; /* set the image width */
+  height: auto; /* allow the image height to adjust proportionally */
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 20;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffff;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration:underline;
+  text-decoration-color:#FAA819;
+  text-decoration-thickness: 5px;  
+}
