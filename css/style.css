@@ -1,10 +1,16 @@
-html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Sen';}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Sen';
+  background-color: #FFF4eF; 
+  color: #444583;
+}
+p {
+  color: #444583;
+}
 img {
   display: left; /* display the image as a block element */
   margin: 0 auto; /* center the image horizontally */
   width: 100px; /* set the image width */
   height: auto; /* allow the image height to adjust proportionally */
-  padding: 15px 10px;
+  padding: 25px 20px;
   cursor: pointer;
 }
 
@@ -13,7 +19,7 @@ ul {
   margin: 20;
   padding: 0;
   overflow: hidden;
-  background-color: #ffff;
+ 
 }
 
 li {
@@ -22,7 +28,7 @@ li {
 
 li a {
   display: block;
-  color: black;
+  color: #505050;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -33,3 +39,126 @@ li a:hover {
   text-decoration-color:#FAA819;
   text-decoration-thickness: 5px;  
 }
+div {
+  padding: 100px 100px 75px 100px;
+  word-spacing: 3px;
+}
+.button2 {border-radius: 4px;}
+.button {
+  background-color: #444583;
+  border: none;
+  color: white;
+  padding: 13px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.div3 h3 {
+  color: #444583;
+  word-spacing: 3px;
+  margin: 4px 2px;
+}
+.grid-container1 {
+  background-color: #FFF4eF; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Change the number here to adjust the number of columns */
+  grid-gap: 10px; /* Change the value here to adjust the gap between the grid items */
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-item1 {
+  border: 1px solid black; /* Change the border styles here */
+  text-align: center;
+}
+.grid-item2 {
+ /* Change the border styles here */
+  text-align: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+.grid-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.li2 {
+  float: left;
+  display: block;
+  color: #505050;
+  text-align: justify;
+  padding: 14px 16px;
+}
+
+/* App testimonials grid container */
+.grid-container3 {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
+
+/* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+  height: 600px;
+  grid-area: footer;
+  background-color: #FFF4EF;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+.button3 {border-radius: 4px;}
+.nav{
+    list-style-type: none;
+    margin: 20;
+    padding: 100;
+    overflow: hidden;
+   
+  }
+.nav-link {
+    display: block;
+    color: #505050;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
