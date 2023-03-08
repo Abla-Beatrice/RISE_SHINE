@@ -1,164 +1,182 @@
 html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Sen';
+  margin: 0;
   background-color: #FFF4eF; 
   color: #444583;
 }
-p {
-  color: #444583;
-}
-img {
-  display: left; /* display the image as a block element */
-  margin: 0 auto; /* center the image horizontally */
-  width: 100px; /* set the image width */
-  height: auto; /* allow the image height to adjust proportionally */
-  padding: 25px 20px;
-  cursor: pointer;
-}
 
-ul {
+.navigation{
   list-style-type: none;
-  margin: 20;
+  margin: 0;
   padding: 0;
   overflow: hidden;
- 
+  background-color: #FFF4eF;
 }
 
-li {
+.logo {
+  /* display the image as a block element */
+  margin: 0 auto; /* center the image horizontally */
+  width: 200px; /* set the image width */
+  height: auto; /* allow the image height to adjust proportionally */
+  padding-left: 55px ;
+  cursor: pointer;
+ }
+
+.navigation li {
+  font-size: 20px ;
   float: right;
+  height: auto;
+  padding: 35px 32px;
+  padding-left:5px;
 }
 
-li a {
+.navigation a {
   display: block;
   color: #505050;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
+  padding: 4px 4px;
 }
 
 li a:hover {
   text-decoration:underline;
+  color: #505050;
   text-decoration-color:#FAA819;
   text-decoration-thickness: 5px;  
 }
-div {
-  padding: 100px 100px 75px 100px;
-  word-spacing: 3px;
+
+.container{
+  width: 100%;
+
 }
-.button2 {border-radius: 4px;}
-.button {
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.button1 {
+  border-radius: 4px;
   background-color: #444583;
   border: none;
   color: white;
-  padding: 13px 13px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  padding: 14px 28px;
+  font-size: 20px;
+  margin: 20px 12px;
   cursor: pointer;
 }
-.div3 h3 {
-  color: #444583;
-  word-spacing: 3px;
-  margin: 4px 2px;
+.column-1 {
+  float: left;
+  width: 40%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  align-items: end;
 }
-.grid-container1 {
-  background-color: #FFF4eF; 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Change the number here to adjust the number of columns */
-  grid-gap: 10px; /* Change the value here to adjust the gap between the grid items */
+.column-1 p {
+  font-size: 30px;
+  text-align: right;
+
 }
-.grid-container2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.grid-item1 {
-  border: 1px solid black; /* Change the border styles here */
-  text-align: center;
-}
-.grid-item2 {
- /* Change the border styles here */
-  text-align: center;
-  max-width: 100%;
-  max-height: 100%;
-}
-.grid-item img {
-  max-width: 100%;
-  max-height: 100%;
+.column-2 {
+  float: left;
+  width: 60%;
+  padding: 20px;
 }
 
-.li2 {
+/* Create two differents columns that floats next to each other */
+
+.column-3 p{
   float: left;
+  width: 100%;
+  padding: 100px;
+  word-spacing: 3px;
+  font-size: 30px;
+  color: #444583;
+  line-height: 1.25;
+  font-size: 30px;
+}
+
+.column-4 {
+  float: left;
+  width: 100%;
+  padding: 100px;
+}
+.column-4 h2 {
+  font-size: 60x;
+}
+
+img { 
+   
+  display: block; 
+  height: 100%;
+width: 100%; 
+}
+
+ul.ul2 { 
   display: block;
   color: #505050;
-  text-align: justify;
-  padding: 14px 16px;
+  text-align: left;
+  list-style-position: outside;
+  overflow: hidden;
+  word-spacing: 3px;
+
 }
-
-/* App testimonials grid container */
-.grid-container3 {
-  display: grid;
-  grid-template-areas: 
-    'header header header header header header' 
-    'left left middle middle right right' 
-    'footer footer footer footer footer footer';
-
-/* grid-column-gap: 10px; - if you want gap between the columns */
-} 
-
-.left,
-.middle,
-.right {
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+@media screen and (max-width: 1000px) {
+  .column-1,
+  .column-2 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
 }
-
-/* Style the left column */
-.left {
-  grid-area: left;
-}
-
-/* Style the middle column */
-.middle {
-  grid-area: middle;
-}
-
-/* Style the right column */
-.right {
-  grid-area: right;
-}
-
 /* Style the footer */
+
 .footer {
+  background: 
+  linear-gradient(217deg, white, rgba(255,0,0,0) 70.71%),               
+  linear-gradient(127deg, white, orange 70.71%),
+  linear-gradient(360deg, white, orange 70.71%);
   height: 600px;
   grid-area: footer;
   background-color: #FFF4EF;
   padding: 10px;
   text-align: left;
 }
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .grid-container  {
-    grid-template-areas: 
-      'header header header header header header' 
-      'left left left left left left' 
-      'middle middle middle middle middle middle' 
-      'right right right right right right' 
-      'footer footer footer footer footer footer';
-  }
-}
-.button3 {border-radius: 4px;}
 .nav{
-    list-style-type: none;
-    margin: 20;
-    padding: 100;
-    overflow: hidden;
-   
-  }
-.nav-link {
-    display: block;
-    color: #505050;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav li {
+  font-size: 20px ;
+  float: left;
+  height: auto;
+  padding: 4px 6px;
+}
+
+.nav a {
+  display: block;
+  color: #505050;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.button3 {
+  border-radius: 4px;
+  background-color: #444583;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px 12px;
+  cursor: pointer;
+}
