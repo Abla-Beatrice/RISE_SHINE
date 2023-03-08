@@ -76,8 +76,8 @@ li a:hover {
 }
 .column-1 p {
   font-size: 30px;
-  text-align: right;
-
+  text-align: left;
+  padding: 20px;
 }
 .column-2 {
   float: left;
@@ -173,9 +173,7 @@ ul.ul2 {
   background-color: #444583;
   border: none;
   color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  padding: 14px 28px;
   font-size: 20px;
   margin: 20px 12px;
   cursor: pointer;
