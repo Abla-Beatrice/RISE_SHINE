@@ -56,7 +56,6 @@ li a:hover {
 }
 
 .button1 {
-  float: left;
   border-radius: 4px;
   background-color: #444583;
   border: none;
@@ -72,8 +71,8 @@ li a:hover {
   padding: 20px;
   display: flex;
   flex-direction: column ;
-  justify-content: center;
-  align-items: end;
+  justify-content: left;
+  align-items: start;
 }
 .column-1 p {
   font-size: 30px;
@@ -133,40 +132,6 @@ ul.ul2 {
     margin: auto;
   }
 }
-/* Style the footer */
-
-.footer {
-  background: 
-  linear-gradient(217deg, white, rgba(255,0,0,0) 70.71%),               
-  linear-gradient(127deg, white, orange 70.71%),
-  linear-gradient(360deg, white, orange 70.71%);
-  height: 600px;
-  grid-area: footer;
-  background-color: #FFF4EF;
-  padding: 10px;
-  text-align: left;
-}
-.nav{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.nav li {
-  float: left;
-  font-size: 20px ;
-  height: auto;
-  padding: 4px 6px;
-}
-
-.nav a {
-  display: block;
-  color: #505050;
-  text-align: center;
-  text-decoration: none;
-  padding: 14px 16px;
-}
 
 .button {
   border-radius: 4px;
@@ -185,12 +150,38 @@ ul.ul2 {
 .button2 {width:20%;
 }
 
-.log {
-  /* display the image as a block element */
-  margin: 0 auto; /* center the image horizontally */
-  width: 200px; /* set the image width */
-  height: auto; /* allow the image height to adjust proportionally */
-  padding-right: 55px;
+ /* Style the footer */
+ footer {
+  height: 400px;
+  background: 
+  linear-gradient(217deg, white, rgba(255,0,0,0) 70.71%),               
+  linear-gradient(127deg, white, orange 70.71%),
+  linear-gradient(360deg, white, orange 70.71%);
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo1 {
+  width: 200px;
+  padding: 30px;
+}
+
+.logo1 img {
+  max-width: 100%;
   cursor: pointer;
-  float: right;
- }
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  color: #333;
+  cursor: pointer;
+  text-decoration: none; 
+  padding: 14px 16px;
+}
