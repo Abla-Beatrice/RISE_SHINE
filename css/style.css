@@ -56,6 +56,7 @@ li a:hover {
 }
 
 .button1 {
+  float: left;
   border-radius: 4px;
   background-color: #444583;
   border: none;
@@ -108,10 +109,9 @@ li a:hover {
 }
 
 img { 
-   
   display: block; 
   height: 100%;
-width: 100%; 
+  width: 100%; 
 }
 
 ul.ul2 { 
@@ -154,8 +154,8 @@ ul.ul2 {
 }
 
 .nav li {
-  font-size: 20px ;
   float: left;
+  font-size: 20px ;
   height: auto;
   padding: 4px 6px;
 }
@@ -168,13 +168,29 @@ ul.ul2 {
   padding: 14px 16px;
 }
 
-.button3 {
+.button {
   border-radius: 4px;
   background-color: #444583;
   border: none;
   color: white;
   padding: 14px 28px;
+  padding-left: 20px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 20px;
   margin: 20px 12px;
   cursor: pointer;
 }
+.button2 {width:20%;
+}
+
+.log {
+  /* display the image as a block element */
+  margin: 0 auto; /* center the image horizontally */
+  width: 200px; /* set the image width */
+  height: auto; /* allow the image height to adjust proportionally */
+  padding-right: 55px;
+  cursor: pointer;
+  float: right;
+ }
